@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+
+        <div class="row">
+            <!--Menu col-->
+            <div class="col-2">
+                <nav class="nav flex-column">
+                    <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#addLetter" aria-controls="addLetter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        إضافة جواب عام
+                    </button>
+                    <div class="collapse" id="addLetter">
+                        <div>
+                            <a class="nav-link" href="Send%Recieve_1.html">صادر</a>
+                            <a class="nav-link" href="Send%Recieve_1-2.html">وارد</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#addLetterhayaa" aria-controls="addLetter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        إضافة جواب الهيئة
+                    </button>
+                    <div class="collapse" id="addLetterhayaa">
+                        <div>
+                            <a class="nav-link" href="Send%Recieve_1.html">صادر</a>
+                            <a class="nav-link" href="Send%Recieve_1-2.html">وارد</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#tranferletter" aria-controls="addLetter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        مركز التحويلات
+                    </button>
+                    <div class="collapse" id="tranferletter">
+                        <div>
+                            <a class="nav-link" href="Send%Recieve_3.html">جوابات تحتاج للتحويل</a>
+                            <a class="nav-link" href="#">جميع التحويلات</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sendBox" aria-controls="addLetter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        صندوق الصادر
+                    </button>
+                    <div class="collapse" id="sendBox">
+                        <div>
+                            <a class="nav-link" href="Send%Recieve_4.html">صادر هيئة</a>
+                            <a class="nav-link" href="Send%Recieve_4.html">صادر عام</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#recieveBox" aria-controls="addLetter" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        صندوق الوارد
+                    </button>
+                    <div class="collapse" id="recieveBox">
+                        <div>
+                            <a class="nav-link" href="Send%Recieve_4.html">وارد هيئة</a>
+                            <a class="nav-link" href="Send%Recieve_4.html">وارد عام</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success mb-1" type="button" aria-controls="search" onclick="location.href = 'Send%Recieve_5.html';">
+                        بحث عن جواب
+                        </button>
+                        <button class="btn btn-outline-success mb-1" type="button" aria-controls="search" onclick="location.href = 'Send%Recieve_5.html';">
+                            بحث عن جواب
+                            </button>
+                            <button class="btn btn-outline-success mb-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#settings" aria-controls="addLetter" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            إعدادات النظام
+                        </button>
+                        <div class="collapse" id="settings">
+                            <div>
+                                <a class="nav-link" href="#">مشاريع</a>
+                                <a class="nav-link" href="#">موضوعات</a>
+                                <a class="nav-link" href="#">جهات الإرسال</a>
+                                <a class="nav-link" href="#">مستخدمين</a>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+            <!--Ta3deel form-->
+            <div class="col-2 border rounded-3 ms-1">
+                <form>
+                    <div class="row">
+                        <h5>التعديل</h5>
+                        <div class="col-5">
+                            <label for="operationName" class="form-label">رقم</label>
+                            <input type="text" class="form-control form-control-sm" id="operationName"
+                                aria-describedby="operationName" />
+                        </div>
+                        <div class="col-7">
+                            <label for="companyName" class="form-label">تاريخ</label>
+                            <input type="date" class="form-control form-control-sm" id="companyName"
+                                aria-describedby="companyName" />
+                        </div>
+                        <div>
+                            <label for="operationName" class="form-label">مرسل من</label>
+                            <input type="text" class="form-control form-control-sm" id="operationName"
+                                aria-describedby="operationName" />
+                        </div>
+                        <div>
+                            <label for="operationName" class="form-label">موضوع</label>
+                            <input type="text" class="form-control form-control-sm" id="operationName"
+                                aria-describedby="operationName" />
+                        </div>
+                        <div>
+                            <label for="operationName" class="form-label">مشروع</label>
+                            <input type="text" class="form-control form-control-sm" id="operationName"
+                                aria-describedby="operationName" />
+                            <div>
+                                <label for="exampleFormControlTextarea1" class="form-label">ملخص الخطاب</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary my-2">
+                            تعديل
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!--preview form-->
+            <div class="col-5 border rounded-3 py-2">
+                <div class="row bg-secondary" style="height: 3.5em;">
+                    <div class="col-1 bg-danger">
+                        <h1 style="color: aliceblue; cursor: pointer;">&rarr;</h1>
+                    </div>
+                    <div class="col">
+                        <div class="row border-bottom border-dark">
+                            <p style="margin-bottom: 0; text-align: center;">معاينة 1 من 100</p>
+                        </div>
+                        <div class="row">
+                            <p style="margin-bottom: 0; text-align: center;">موضوع</p>
+                        </div>
+                    </div>
+                    <div class="col-1 bg-danger">
+                        <h1 style="color: aliceblue; cursor: pointer;">&larr;</h1>
+                    </div>
+                </div>
+            </div>
+            <!--Ta7weel form-->
+            <div class="col border rounded-3 mx-1">
+                <form>
+                    <!--Nwab names-->
+                    <div>
+                        <h5>التحويل</h5>
+                        <div class="border mb-1">
+                            <div class="input-group mb-1">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input" />
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                    placeholder="نائب 1" disabled />
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input" />
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                    placeholder="نائب 2" disabled />
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input" />
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                    placeholder="نائب 3" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modereen names-->
+                    <div>
+                        <h6>مديرين الإدارات</h6>
+                        <input type="text" class="form-control form-control-sm mb-1" placeholder="بحث"
+                            id="operationName" aria-describedby="operationName" />
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    مدير 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    مدير 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    مدير 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Mowzfeen names-->
+                    <div>
+                        <h6>موظفيين</h6>
+                        <input type="text" class="form-control form-control-sm mb-1" placeholder="بحث"
+                            id="operationName" aria-describedby="operationName" />
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    موظف 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    موظف 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm btn-secondary w-100">
+                                    موظف 1
+                                </button>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control form-control-sm" placeholder="التوجيه"
+                                    id="operationName" aria-describedby="operationName" />
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="checkbox" class="btn-check" name="btnradio" id="btnradio1"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-danger" for="btnradio1">
+                                    هام</label>
+
+                                <input type="checkbox" class="btn-check" name="btnradio" id="btnradio2"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-danger" for="btnradio2">هام و عاجل</label>
+
+                                <input type="checkbox" class="btn-check" name="btnradio" id="btnradio3"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-danger" for="btnradio3">عاجل</label>
+
+                                <input type="checkbox" class="btn-check" name="btnradio" id="btnradio4"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-danger" for="btnradio4">سرعة الرد</label>
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                            placeholder="ملاحظات عامة"></textarea>
+
+                        <div class="row">
+                            <button type="submit" class="btn btn-lg btn-success my-2">
+                                تحويل
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
