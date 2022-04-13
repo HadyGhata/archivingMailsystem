@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\templets\SendRecieve_1-2_ok.html" />
+    <None Include="wwwroot\templets\SendRecieve_1.html" />
+    <None Include="wwwroot\templets\SendRecieve_2.html" />
+    <None Include="wwwroot\templets\SendRecieve_3.html" />
+    <None Include="wwwroot\templets\SendRecieve_4.html" />
+    <None Include="wwwroot\templets\SendRecieve_5.html" />
+  </ItemGroup>
+
+</Project>
